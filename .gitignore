@@ -3,6 +3,7 @@
 
 # User-specific stuff:
 .idea
+leetcode.iml
 
 ## File-based project format:
 *.iws
