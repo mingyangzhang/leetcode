@@ -1,12 +1,6 @@
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) { val = x; }
- * }
- */
-public class Solution {
+package Generic;
+
+public class OJ25 {
     public ListNode reverseKGroup(ListNode head, int k) {
         if(k<=1 || head == null) return head;
         ListNode hair = new ListNode(0);

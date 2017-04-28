@@ -1,3 +1,5 @@
+package Generic;
+
 public class OJ26 {
     public int removeDuplicates(int[] nums) {
         if(nums.length <= 1) return nums.length;

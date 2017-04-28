@@ -1,18 +1,14 @@
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) { val = x; }
- * }
- */
+package Generic;
+
+import java.util.Comparator;
+import java.util.PriorityQueue;
+
 public class OJ23 {
     public ListNode mergeKLists(ListNode[] lists) {
         ListNode head = null;
         ListNode tail = null;
 
-        PriorityQueue<ListNode> waiting= new PriorityQueue<ListNode>(lists.size(),new Comparator<ListNode>(){
-            @Override
+        PriorityQueue<ListNode> waiting= new PriorityQueue<ListNode>(lists.length,new Comparator<ListNode>(){
             public int compare(ListNode o1,ListNode o2){
                 if (o1.val<o2.val)
                     return -1;

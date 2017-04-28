@@ -1,3 +1,5 @@
+package Generic;
+
 public class OJ29 {
     public int divide(int dividend, int divisor) {
         if(dividend == 0) return 0;

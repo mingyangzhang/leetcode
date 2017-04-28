@@ -1,3 +1,5 @@
+package Generic;
+
 public class OJ27 {
     public int removeElement(int[] nums, int val) {
         if(nums==null || nums.length <1) return nums.length;
