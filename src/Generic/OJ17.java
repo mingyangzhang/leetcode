@@ -1,3 +1,6 @@
+package Generic;
+import java.util.*;
+
 public class OJ17 {
     public List<String> letterCombinations(String digits) {
         Deque<String> queue = new ArrayDeque<>();
@@ -35,7 +38,7 @@ public class OJ17 {
 
     public static void main(String[] args){
         String s = "23";
-        OJ17 sol = new OJ17():
+        OJ17 sol = new OJ17();
         List<String> ans = sol.letterCombinations(s);
     }
 }

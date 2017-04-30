@@ -1,3 +1,5 @@
+package tree;
+
 public class OJ98 {
     public boolean isSameTree(TreeNode p, TreeNode q) {
         if(p == null || q==null){
