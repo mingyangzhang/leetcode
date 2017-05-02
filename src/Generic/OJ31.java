@@ -17,21 +17,21 @@ public class OJ31 {
             else{
                 while(i<nums.length-1 && nums[i]>nums[j]) i++;
                 if(nums[i]<=nums[j]) i--;
-                int numsAtJ = nums[j];
+                int temp = nums[j];
                 nums[j] = nums[i];
-                nums[i] = numsAtJ;
+                nums[i] = temp;
                 if(i<nums.length-1) {
                     int index = i + 1;
                     while (index < nums.length - 1 && nums[index] > nums[i]) index++;
                     if (nums[index] < nums[i]) index--;
-                    int temp = nums[i];
+                    temp = nums[i];
                     nums[i] = nums[index];
                     nums[index] = temp;
                 }
                 int left = j + 1;
                 int right = nums.length - 1;
                 while (left < right) {
-                    int temp = nums[left];
+                    temp = nums[left];
                     nums[left] = nums[right];
                     nums[right] = temp;
                     left++;
