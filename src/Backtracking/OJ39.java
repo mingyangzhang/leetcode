@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Main {
+public class OJ39 {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
         Arrays.sort(candidates);
         List<List<Integer>> ans = new ArrayList();
